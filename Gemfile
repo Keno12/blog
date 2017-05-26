@@ -6,7 +6,7 @@ gem 'redcarpet'
 gem 'pygments.rb'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.1'
+gem 'rails', '5.0.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.13', '< 0.5'
 # Use SCSS for stylesheets
@@ -35,10 +35,15 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+# 图片处理
+gem "mini_magick"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  # 用pry做console，方便显示、调试
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-nav'
 end
 
 group :development do

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/about' => 'page#about'  
   get 'sigup'=>"users#sigup",:as=>"sigup"            
   resources :users,only: [:create]
-
+  get 'edit_image/index'
   #isues
   resources :issues
 
